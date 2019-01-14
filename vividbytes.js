@@ -13,6 +13,8 @@ class MyPromise {
         returnVal.then(function(v) {
           resolution.promise._resolve(v);
         });
+      } else {
+        resolution.promise._resolve(returnVal)
       }
     }
   }
